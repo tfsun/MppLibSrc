@@ -37,8 +37,6 @@ public enum StaticStorage implements Cache {
 				LocalTime now = LocalTime.now();
 				//if time has not expired, return value
 				if(!(now.isAfter(time))) {
-					System.out.println("time: " + time);
-					System.out.println("now: " + now);
 					retval.add(p.dataVal);
 				} else {
 					it.remove();
