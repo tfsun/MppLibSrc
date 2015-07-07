@@ -1,0 +1,11 @@
+A, ArrayList extends AbstractList class and implements Serializable, Cloneable, Iterable, Collection, List, RandomAccess interfaces.
+B, public boolean equals(Employee e) is not a overridden function. it should be public boolean equals(Object e).
+C, For the HashMap<Employee, Employee>, Using containsKey(Employee e) function must override the hashCode() function in class Employee.
+D, The variable visited should not be calculated during the hashCode() function and equals(Object e) function.
+E, 
+	1, When the type D is a Class
+		1.1,  B,C do not override the method(), D inherits A version of method();
+		1.2,  B, overrides the method() but C does not override method(), D inherits B version of method();
+		1.3,  C, overrides the method() but B does not override method(), D inherits C version of method();
+		1.3,  B, C, override the method(), there is an complier error;
+	2, When the type D is a Interface, the result is the same as 1;
