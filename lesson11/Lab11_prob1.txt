@@ -1,0 +1,5 @@
+1.
+a) Compiler error happens at line 4: 
+Type mismatch: cannot convert from List<Integer> to List<Number>.
+b) Compiler error happens at line 5:
+The type of "? extends Number" can not accept double.
